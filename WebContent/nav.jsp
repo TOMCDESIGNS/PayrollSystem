@@ -31,10 +31,10 @@
           <ul class="dropdown-menu">
             <li><a href="add_employee.jsp">Add Employee</a></li>
             <li><a href="update_employee.jsp">Update Employee</a></li>
-            <li><a href="#">Search</a></li>
+         
            
             <li role="separator" class="divider"></li>
-            <li><a href="#">Delete</a></li>
+            <li><a href="deleteEmployee.jsp">Delete</a></li>
            
           </ul>
         </li>
@@ -46,7 +46,7 @@
           <ul class="dropdown-menu">
             <li><a href="allowance.jsp">Allowance</a></li>
             <li><a href="deduction.jsp">Deduction</a></li>
-             <li><a href="#">Update Salary</a></li>
+            
              <li><a href="makepayment.jsp">Make Payment</a></li>
              
            
@@ -67,7 +67,7 @@
         </li>
         
         
-        <li><a href="#">Logout</a></li>
+        <li><a href="logout.jsp">Logout</a></li>
       </ul>
 
     </div><!-- /.navbar-collapse -->

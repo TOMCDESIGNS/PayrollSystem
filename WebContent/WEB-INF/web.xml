@@ -37,17 +37,23 @@
     <servlet-name>SearchPayServlet</servlet-name>
     <servlet-class>SearchPayServlet</servlet-class>
   </servlet>
-  
-   <servlet>
+  <servlet>
     <servlet-name>MakePaymentServlet</servlet-name>
     <servlet-class>MakePaymentServlet</servlet-class>
   </servlet>
-  
-  
-   <servlet>
+  <servlet>
     <servlet-name>ExpenditureReportServlet</servlet-name>
     <servlet-class>ExpenditureReportServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>DeleteEmployeeServlet</servlet-name>
+    <servlet-class>DeleteEmployeeServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>SearchSalaryServlet</servlet-name>
+    <servlet-class>SearchSalaryServlet</servlet-class>
+  </servlet>
+
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

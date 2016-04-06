@@ -1,4 +1,15 @@
 
+
+<%
+    if ((session.getAttribute("username") == null) || (session.getAttribute("roles").equals("2"))) {
+%>
+You need to be logged in as to view this page<br/>
+<a href="login.jsp">Please Login</a>
+<%
+response.sendRedirect("login.jsp");
+%>
+<%} else {
+%>
 <%@ page import="java.util.*" %> 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -212,3 +223,8 @@ $.print("#printable");
 
 </body>
 </html>
+
+<%
+
+}
+%>

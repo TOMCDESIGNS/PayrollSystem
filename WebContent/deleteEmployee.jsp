@@ -19,7 +19,7 @@ response.sendRedirect("login.jsp");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Allowance</title>
+<title>Delete</title>
 <!-- Basic CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
@@ -42,7 +42,7 @@ response.sendRedirect("login.jsp");
 </div>
 
  <div class="col-md-4">
-<input type="hidden" name="source_url" id="source_url" value="/allowance.jsp" />
+<input type="hidden" name="source_url" id="source_url" value="/deleteEmployee.jsp" />
 <input class="btn"  type="submit" name="search" id="search" value="Search">
 </div>
 
@@ -82,10 +82,10 @@ if(request.getAttribute("recordList")!=null)
 <div class="col-md-5">
 
 
-
-	
+ <form method="post" action="DeleteEmployeeServlet" >
+ 
 <h1>Employee Details</h1>
-
+<input type="hidden" id="emp_ID" name="emp_ID" value="<%=recordList.get(1)%>" class="form-control"  />
 <strong>Employee ID:</strong> <%=recordList.get(1)%>
 
 <br/><br/>
@@ -99,81 +99,16 @@ if(request.getAttribute("recordList")!=null)
 
 <br>
 
+<br>
+<br>
 
 
+	<button type="submit" class="btn btn-danger">Delete Employee</button>
 	
+	</form>
 </div>
 <div class="col-md-2"></div>
-<div class="col-md-5"><h1>Allowance</h1>
 
- <form name="sub" action="" id="sub">
-<p>Bonus and incentives for the month of    <input type="month" name="date_of_payment" id="date_of_payment" required title="Please select the appropriate month to add the allowances" />
-
-<input type="hidden" id="emp_ID" name="emp_ID" value="<%=recordList.get(1)%>" class="form-control" required readonly  />
-
-</p>
-
-
-<table  class="table table-striped table-bordered" cellspacing="0" width="100%">
-<thead>
-<tr>
-                <th><strong>Type</strong></th>
-                <th><strong>Amount</strong></th>
-                </tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Salary</td>
-<td><input type="text" id="gross_salary" name="gross_salary" value="<%=recordList.get(11)%>" class="form-control" readonly required/></td>
-</tr>
-<tr>
-<td>Overtime</td>
-<td><input type="text" name="overtime" id="overtime"  value="0" class="form-control" required/></td>
-</tr>
-
-<tr>
-<td>Medical</td>
-<td><input type="text" name="medical" id="medical"  value="0" class="form-control" required/></td>
-</tr>
-
-<tr>
-<td>Lunch</td>
-<td><input type="text" name="lunch" id="lunch"  value="0" class="form-control" required/></td>
-</tr>
-
-<tr>
-<td>Bonus</td>
-<td><input type="text" name="bonus" id="bonus"  value="0" class="form-control" required/>
-
-
-</td>
-</tr>
-
-<tr  >
-<td  colspan="2" id="message">
-
-
-
-</td>
-
-</tr>
-
-<tr>
-<td></td>
-<td>
-
-<input type="submit" name="calculate" id="calculate" onclick="form.action='calculateServlet';AddToGross();"  value="Calculate" class="btn btn-warning"/>
-<input type="submit" name="save" id="save"  value="Save" onclick="form.action='SaveAllowanceServlet'; form.method='POST'" class="btn btn-primary"/></td>
-</tr>
-</tbody>
-
-</table>
-</form>
-
-
-
-</div>
 </div>
 
 
