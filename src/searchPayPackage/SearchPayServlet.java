@@ -15,7 +15,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SearchServlet
+ * Servlet implementation class SearchServlet. This class is responsible for searching the
+ *  searching for a particular employee based on  employee id and the date of payment
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/SearchPayServlet")
 public class SearchPayServlet extends HttpServlet {

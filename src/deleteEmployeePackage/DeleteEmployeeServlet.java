@@ -14,7 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class updateEmployeeServlet
+ * Servlet implementation class DeleteEmployeeServlet. This class deletes an Employee by id.
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/DeleteEmployeeServlet")
 public class DeleteEmployeeServlet extends HttpServlet {

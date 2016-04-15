@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class somServlet
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/somServlet")
 public class somServlet extends HttpServlet {

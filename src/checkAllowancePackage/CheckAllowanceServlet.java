@@ -17,7 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.swing.JOptionPane;
 
 /**
- * Servlet implementation class SearchServlet
+ * Servlet implementation class CheckAllowanceServlet. The class checks if there is an allowance calculation for a certain  month
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/CheckAllowanceServlet")
 public class CheckAllowanceServlet extends HttpServlet {

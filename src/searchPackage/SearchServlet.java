@@ -15,7 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SearchServlet
+ * Servlet implementation class SearchServlet. This class serches for an emploee from the database by employee id.
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/SearchServlet")
 public class SearchServlet extends HttpServlet {

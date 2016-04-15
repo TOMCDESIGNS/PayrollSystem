@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class calculateServlet
+ * Servlet implementation class calculateServlet,  This class calculates deduction.
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/CalculateDeductionServlet")
 public class CalculateDeductionServlet extends HttpServlet {

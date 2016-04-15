@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class addEmployeeServlet
+ * Servlet implementation class addEmployeeServlet. The class is used for updating allowancein the database
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/SaveAllowanceServlet")
 public class SaveAllowanceServlet extends HttpServlet {

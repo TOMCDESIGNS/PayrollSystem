@@ -13,8 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class addEmployeeServlet
+ * Servlet implementation class addEmployeeServlet.  This class adss Employees to the database.
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
+
 @WebServlet("/addEmployeeServlet")
 public class addEmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -24,6 +27,8 @@ public class addEmployeeServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// gets values of text fields
@@ -45,7 +50,7 @@ public class addEmployeeServlet extends HttpServlet {
 	
 	Connection conn = null;
 	
-	
+
 	 String message = null; // message will be sent back to client
             
            try {

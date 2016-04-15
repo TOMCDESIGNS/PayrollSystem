@@ -16,30 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `admin_tb`
---
-
-DROP TABLE IF EXISTS `admin_tb`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `admin_tb` (
-  `admin_id` int(11) NOT NULL,
-  `username` varchar(45) DEFAULT NULL,
-  `password` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`admin_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `admin_tb`
---
-
-LOCK TABLES `admin_tb` WRITE;
-/*!40000 ALTER TABLE `admin_tb` DISABLE KEYS */;
-/*!40000 ALTER TABLE `admin_tb` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `designations`
 --
 
@@ -86,7 +62,7 @@ CREATE TABLE `employees_tb` (
   `date_joined` date DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `emp_ID_UNIQUE` (`emp_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +71,7 @@ CREATE TABLE `employees_tb` (
 
 LOCK TABLES `employees_tb` WRITE;
 /*!40000 ALTER TABLE `employees_tb` DISABLE KEYS */;
-INSERT INTO `employees_tb` VALUES (1,'Emp001','Emmancipate','Musemwa','male','1998-12-19','emanzoelife@gmail.com','+60166500924','DR 18','nnnnnn','ICT','15000','2016-03-26'),(2,'Emp004','Emmancipate','Musemwa','male','2016-03-12','emanzoelife@gmail.com','+60166500924','DR 18','Receptionist','Accounting and Finance','1500','2016-03-27'),(3,'Emp005','Mark','Jane','male','1998-12-19','emanzoelife@gmail.com','+60166500924','DR 18','Developer','ICT','6000','2016-03-14');
+INSERT INTO `employees_tb` VALUES (1,'Emp001','Emmancipate','Musemwa','male','1998-12-19','emanzoelife@gmail.com','+60166500924','DR 18','nnnnnn','ICT','15000','2016-03-26');
 /*!40000 ALTER TABLE `employees_tb` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -145,7 +121,7 @@ CREATE TABLE `payslip` (
   `deductions` varchar(45) DEFAULT NULL,
   `net_salary` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`payslip_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,8 +130,34 @@ CREATE TABLE `payslip` (
 
 LOCK TABLES `payslip` WRITE;
 /*!40000 ALTER TABLE `payslip` DISABLE KEYS */;
-INSERT INTO `payslip` VALUES (1,'Emp001','2016-03','15000','220.0','6280.22','5890.18'),(2,'Emp001','2016-04','15000','90.0','990.0','14010.0');
+INSERT INTO `payslip` VALUES (1,'Emp001','2016-03','15000','220.0','6280.22','5890.18'),(2,'Emp001','2016-04','15000','90.0','990.0','14010.0'),(3,'Emp007','2016-04','1500','100.0',NULL,'1600.0');
 /*!40000 ALTER TABLE `payslip` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_tb`
+--
+
+DROP TABLE IF EXISTS `users_tb`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_tb` (
+  `admin_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `roles` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`admin_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_tb`
+--
+
+LOCK TABLES `users_tb` WRITE;
+/*!40000 ALTER TABLE `users_tb` DISABLE KEYS */;
+INSERT INTO `users_tb` VALUES (1,'admin','admin1000','1'),(2,'eman','eman1000','2');
+/*!40000 ALTER TABLE `users_tb` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -167,4 +169,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-16 21:34:08
+-- Dump completed on 2016-04-06 20:00:17

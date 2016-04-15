@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class updateEmployeeServlet
+ * Servlet implementation class updateEmployeeServlet. This class updates employee Data in the database
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/updateEmployeeServlet")
 public class updateEmployeeServlet extends HttpServlet {

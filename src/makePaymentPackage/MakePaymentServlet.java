@@ -14,7 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class addEmployeeServlet
+ * Servlet implementation class addEmployeeServlet. The class is used for saving payement in the database
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/MakePaymentServlet")
 public class MakePaymentServlet extends HttpServlet {

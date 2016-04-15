@@ -15,7 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SearchServlet
+ * Servlet implementation class ExpenditureReportServlet. This class allows the reports to be viewed.
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/ExpenditureReportServlet")
 public class ExpenditureReportServlet extends HttpServlet {

@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class calculateServlet
+ * Servlet implementation class calculateServlet. This class calculates allowance.
+ * @author emmancipatemusemwa
+ * @version 1.0
  */
 @WebServlet("/calculateServlet")
 public class calculateServlet extends HttpServlet {
